@@ -29,7 +29,7 @@ Add the following to your `build.gradle`:
 Create a Layout
 ===============
 
-To make an item in the list dismissable, you need ot place a ViewGroup (i.e. FrameLayout) as the 
+To make an item in the list dismissable, you need to place a ViewGroup (i.e. FrameLayout) as the 
 root view of your layout. Inside the ViewGroup, add one view that contains the main content for 
 the row (your primary layout when the row hasn't been dismissed yet) and another view that contains 
 the contents of the dismiss layout (i.e. with an undo button).
@@ -109,7 +109,7 @@ With a `ListView`:
 	                            }
 	                            
 	                            @Override
-                                public void onPendingDismiss(ListViewAdapter recyclerView, int position) {
+                                public void onPendingDismiss(ListViewAdapter listView, int position) {
     
                                 }
 	
@@ -147,7 +147,7 @@ With a `RecyclerView`:
 	                            }
 	                            
 	                            @Override
-                                public void onPendingDismiss(ListViewAdapter recyclerView, int position) {
+                                public void onPendingDismiss(RecyclerViewAdapter recyclerView, int position) {
     
                                 }
 	
